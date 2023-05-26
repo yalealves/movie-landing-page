@@ -48,6 +48,13 @@ body {
     ;
 }
 
+.logo-movie {
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+    transform: scale(0.4);
+}
+
 /* Estilização Navbar */
 nav {
     display: flex;
@@ -215,12 +222,8 @@ nav {
     transition: all 0.5s ease;
 }
 
-.logo-movie {
-    position: absolute;
-    bottom: 20%;
-    right: 0;
-    transform: scale(0.4);
-}
+
+/* Responsividade */
 
 @media screen and (max-width: 768px) {
     .menu {
