@@ -1,5 +1,9 @@
 const playButtonElement = document.querySelector('button.play')
 const trailerButtonElement = document.querySelector('button.trailer')
+const detailsElement = document.querySelector('.details');
+const navElement = document.querySelector('nav');
+
+
 
 playButtonElement.addEventListener('click', function(){
     window.open('https://github.com/yalealves/movie-landing-page', '_blank');
@@ -10,6 +14,9 @@ trailerButtonElement.addEventListener('click', function(){
 })
 
 document.addEventListener("DOMContentLoaded", () => {
+
+    detailsElement.style.opacity = '1';
+    navElement.style.opacity = '1';
 
     /*--=========== TIMELINE LOADING E HERO ============- */
   

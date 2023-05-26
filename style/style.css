@@ -55,6 +55,7 @@ nav {
     align-items: center;
     color: #FFFFFF;
     padding: 24px 44px;
+    opacity: 0;
 }
 
 .menu ul {
@@ -122,6 +123,7 @@ nav {
     font-family: 'Rubik', sans-serif;
     font-size: 14px;
     transform: scale(1.4);
+    opacity: 0;
 }
 
 .title-details ul {
@@ -240,5 +242,13 @@ nav {
         bottom: 0;
         transform: scale(1) !important;
         left: 0;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .details{
+        transform: scale(1) !important;
+        left: 0;
+        bottom: 50px;
     }
 }
