@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Rubik:wght@400;500;600;700&display=swap');
+
+/* Estilização Geral */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background-color: #0D0C0F;
+}
+
+/* Estilização Hero Section */
+
+.hero{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%; 
+}
+
+.overlay img{
+    object-fit:cover;
+    width: 100vw;
+    height: 100%; 
+}
+
+.overlay::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(358.93deg, #0D0C0F 0.83%, rgba(13, 12, 15, 0.85) 28.55%, rgba(13, 12, 15, 0.26) 57.53%, rgba(13, 12, 15, 0.284314) 70.66%, #0D0C0F 103.18%);;
+}
+
+/* Estilização Navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 24px 44px;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    gap: 28px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+.nav-actions{
+    display: flex;
+    gap: 22px;
+}
+
+.avatar-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.nav-actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-photo img{
+    width: 24px;
+    height: 24px;
+}
+
+.avatar-photo{
+    display: flex;
+    align-items: center;
+}
+
+/* Estilização dos detalhes do filme */
+
+.details{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    color: white;
+    padding: 24px 44px;
+    width: 100%;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+}
+
+.title-details ul {
+    display: flex;
+    gap: 24px;
+    color: #9CA4AB;
+}
+.title-details ul > li:first-child{
+    list-style: none;
+}
+
+.badge{
+    background-color: #0D0C0F;
+    width: fit-content;
+    border-radius: 16px;
+    padding: 4px 16px;
+    margin-bottom: 24px;
+}
+
+.actions-buttons{
+    margin-top: 16px;
+}
+
+.overview{
+    line-height: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+.title{
+    font-size: 32px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.actions-buttons{
+    width: fit-content;
+    display: flex;
+    gap: 16px;
+}
+
+.actions-buttons button{
+    padding: 12px 24px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+.actions-buttons i {
+    font-size: 18px;
+}
+
+.actions-buttons .play{
+    background-color: #00925D;
+    
+}
+.actions-buttons .play:hover{
+    background-color: #02c07b;
+    transition: all 0.5s ease;
+}
+
+.actions-buttons .trailer{
+    background-color: #28262D;
+}
+
+.actions-buttons .trailer:hover{
+    background-color: #423f49;
+    transition: all 0.5s ease;
+}
+
+.actions-buttons .add-watchlist{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.actions-buttons .add-watchlist:hover{
+    background-color: #423f49;
+    transition: all 0.5s ease;
+}
+
+.logo-movie{
+    position: absolute;
+    bottom:0;
+    right: -25%;
+    transform: scale(0.4);
+}
+
+@media screen and (max-width: 768px) {
+    .menu{
+        display: none;
+    }
+    .actions-buttons{
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+    .hero{
+        overflow: auto;
+        max-height: none;
+    }
+    .details{
+        top: 150px;
+    }
+}
+
