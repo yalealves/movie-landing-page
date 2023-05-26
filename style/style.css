@@ -12,6 +12,7 @@ body {
     height: 100vh;
     font-family: 'Inter', sans-serif;
     background-color: #0D0C0F;
+    user-select: none;
 }
 
 /* Estilização Hero Section */
@@ -82,7 +83,7 @@ nav {
     font-weight: bold;
 }
 
-.menu ul>li:after{
+.menu ul>li:after {
     content: '';
     height: 3px;
     width: 0px;
@@ -94,7 +95,7 @@ nav {
     transition: .3s;
 }
 
-.menu ul>li:hover:after{
+.menu ul>li:hover:after {
     width: 100%;
     left: 0%;
 }
@@ -266,8 +267,8 @@ nav {
     }
 }
 
-@media screen and (max-width: 1280px){
-    .details{
+@media screen and (max-width: 1280px) {
+    .details {
         transform: scale(1) !important;
         left: 0;
         bottom: 50px;
