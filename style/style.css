@@ -63,6 +63,14 @@ nav{
     font-weight: 400;
 }
 
+.menu ul>li{
+    cursor: pointer;
+}
+
+.menu ul>li:first-child{
+    font-weight: bold;
+}
+
 
 .nav-actions{
     display: flex;
@@ -80,11 +88,14 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .avatar-photo img{
     width: 24px;
     height: 24px;
+    border-radius: 50%;
+    border: 1px solid white;
 }
 
 .avatar-photo{
@@ -219,4 +230,5 @@ nav{
         top: 150px;
     }
 }
+
 
